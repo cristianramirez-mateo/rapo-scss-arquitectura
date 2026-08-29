@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Contacto con RAPO Creative</title>
+  <desc id="desc">Ilustración de dos personas conversando mediante mensajes digitales</desc>
+  <rect width="800" height="450" fill="#171512"/>
+  <circle cx="205" cy="175" r="58" fill="#d6b36a"/>
+  <path d="M95 370c10-93 50-145 110-145s100 52 110 145" fill="#f6f0e5"/>
+  <circle cx="595" cy="175" r="58" fill="#c9b18b"/>
+  <path d="M485 370c10-93 50-145 110-145s100 52 110 145" fill="#d6b36a"/>
+  <path d="M300 80h210a30 30 0 0130 30v75a30 30 0 01-30 30h-90l-42 42v-42h-78a30 30 0 01-30-30v-75a30 30 0 0130-30z" fill="#39342d" stroke="#f6f0e5" stroke-width="4"/>
+  <circle cx="350" cy="148" r="10" fill="#f6f0e5"/><circle cx="405" cy="148" r="10" fill="#f6f0e5"/><circle cx="460" cy="148" r="10" fill="#f6f0e5"/>
+</svg>
+

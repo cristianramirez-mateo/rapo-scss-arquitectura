@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Equipo de RAPO Creative</title>
+  <desc id="desc">Ilustración de tres personas reunidas alrededor de una mesa de trabajo</desc>
+  <rect width="800" height="450" fill="#f6f0e5"/>
+  <ellipse cx="400" cy="330" rx="280" ry="62" fill="#c9b18b"/>
+  <circle cx="245" cy="165" r="48" fill="#d6b36a"/><circle cx="400" cy="125" r="48" fill="#39342d"/><circle cx="555" cy="165" r="48" fill="#d6b36a"/>
+  <path d="M165 300c8-70 38-105 80-105s72 35 80 105" fill="#39342d"/>
+  <path d="M320 280c8-70 38-105 80-105s72 35 80 105" fill="#d6b36a"/>
+  <path d="M475 300c8-70 38-105 80-105s72 35 80 105" fill="#39342d"/>
+  <rect x="340" y="285" width="120" height="75" rx="8" fill="#171512"/>
+</svg>
+

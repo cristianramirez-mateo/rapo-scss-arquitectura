@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="180" viewBox="0 0 440 180" role="img" aria-labelledby="title desc">
+  <title id="title">RAPO Creative</title>
+  <desc id="desc">Logo textual dorado de la agencia RAPO Creative sobre fondo oscuro</desc>
+  <rect width="440" height="180" fill="#171512" rx="18"/>
+  <circle cx="70" cy="90" r="38" fill="none" stroke="#d6b36a" stroke-width="6"/>
+  <path d="M52 112V66h22c17 0 27 8 27 22 0 10-6 17-15 20l17 24H82l-14-21v21zM68 80v17h6c7 0 11-3 11-9s-4-8-11-8z" fill="#d6b36a"/>
+  <text x="130" y="90" fill="#f6f0e5" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="6">RAPO</text>
+  <text x="132" y="125" fill="#d6b36a" font-family="Arial, sans-serif" font-size="20" letter-spacing="5">CREATIVE</text>
+</svg>
+

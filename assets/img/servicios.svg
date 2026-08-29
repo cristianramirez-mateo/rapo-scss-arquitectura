@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Servicios de RAPO Creative</title>
+  <desc id="desc">Ilustración de tres tarjetas que representan estrategia, contenido y crecimiento</desc>
+  <rect width="800" height="450" fill="#171512"/>
+  <rect x="70" y="95" width="190" height="260" rx="20" fill="#f6f0e5"/>
+  <rect x="305" y="95" width="190" height="260" rx="20" fill="#d6b36a"/>
+  <rect x="540" y="95" width="190" height="260" rx="20" fill="#f6f0e5"/>
+  <circle cx="165" cy="165" r="38" fill="#d6b36a"/>
+  <path d="M140 165h50M165 140v50" stroke="#171512" stroke-width="10" stroke-linecap="round"/>
+  <rect x="352" y="130" width="96" height="75" rx="8" fill="#171512"/>
+  <path d="M575 250l45-50 35 25 40-70" fill="none" stroke="#d6b36a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M110 255h110M110 285h85M345 255h110M345 285h85M580 285h110" stroke="#39342d" stroke-width="10" stroke-linecap="round"/>
+</svg>
+

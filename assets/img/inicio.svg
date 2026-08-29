@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Estrategia digital de RAPO Creative</title>
+  <desc id="desc">Ilustración de una creadora frente a una computadora y un panel de crecimiento</desc>
+  <rect width="800" height="450" fill="#171512"/>
+  <rect x="70" y="70" width="410" height="290" rx="24" fill="#f6f0e5"/>
+  <circle cx="215" cy="180" r="52" fill="#d6b36a"/>
+  <path d="M125 325c10-66 49-101 90-101s80 35 90 101" fill="#c9b18b"/>
+  <rect x="300" y="145" width="130" height="100" rx="10" fill="#39342d"/>
+  <path d="M530 310l55-70 55 28 77-108" fill="none" stroke="#d6b36a" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="530" cy="310" r="12" fill="#f6f0e5"/><circle cx="585" cy="240" r="12" fill="#f6f0e5"/><circle cx="640" cy="268" r="12" fill="#f6f0e5"/><circle cx="717" cy="160" r="12" fill="#f6f0e5"/>
+</svg>
+

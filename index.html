@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RAPO Creative, agencia integral de community management, diseño web y estrategia para creadoras digitales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Inicio | RAPO Creative</title>
+</head>
+<body class="site-body layout-grid page-home">
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark rapo-navbar" aria-label="Navegación principal">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand logo-link" href="index.html" aria-label="Ir al inicio de RAPO Creative">
+          <img class="logo-image" src="assets/img/logo-rapo.svg" alt="Logo de RAPO Creative" width="220" height="90">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link menu-link active" href="index.html" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link menu-link" href="pages/sobre-mi.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link menu-link" href="pages/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link menu-link" href="pages/proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link menu-link" href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main" id="contenido-principal">
+    <section class="hero-section">
+      <article class="hero-content">
+        <p class="eyebrow-text">AGENCIA INTEGRAL DE MARKETING DIGITAL</p>
+        <h1 class="page-title">Convertimos ideas en marcas que crecen</h1>
+        <p class="lead-text">En RAPO Creative unimos estrategia, Community Management y diseño web para impulsar negocios y creadoras con una presencia profesional.</p>
+        <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
+          <a class="btn rapo-btn rapo-btn--primary" href="pages/contacto.html">Quiero mejorar mi negocio</a>
+          <a class="btn rapo-btn rapo-btn--secondary" href="pages/servicios.html#creadoras">Soy creadora de contenido</a>
+        </div>
+      </article>
+
+      <figure class="hero-figure">
+        <img class="hero-image" src="assets/img/inicio.svg" alt="Equipo de marketing trabajando en la estrategia digital de una marca" width="800" height="450">
+        <figcaption class="figure-caption">Estrategia, contenido y crecimiento para cada etapa de tu proyecto.</figcaption>
+      </figure>
+    </section>
+
+    <section class="content-section" aria-labelledby="servicios-destacados">
+      <p class="eyebrow-text eyebrow-text--dark">SOLUCIONES A MEDIDA</p>
+      <h2 class="section-title" id="servicios-destacados">Todo lo que tu presencia digital necesita</h2>
+      <p class="body-text">Componentes de Bootstrap adaptados a la identidad visual de RAPO para presentar nuestros servicios con claridad.</p>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-6 col-xl-4">
+          <article class="card service-card h-100" tabindex="0">
+            <div class="card-body">
+              <span class="service-number">01</span>
+              <h3 class="card-title">Community Management</h3>
+              <p class="card-text">Planificamos contenido, administramos comunidades y medimos resultados para sostener el crecimiento.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <article class="card service-card h-100" tabindex="0">
+            <div class="card-body">
+              <span class="service-number">02</span>
+              <h3 class="card-title">Diseño de páginas web</h3>
+              <p class="card-text">Creamos sitios claros, responsivos y alineados con la identidad y los objetivos de cada negocio.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-12 col-xl-4">
+          <article class="card service-card h-100" tabindex="0">
+            <div class="card-body">
+              <span class="service-number">03</span>
+              <h3 class="card-title">Estrategia para creadoras</h3>
+              <p class="card-text">Desarrollamos una línea especializada, personalizada y confidencial para monetizar mejor cada cuenta.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section content-section--accent gallery-section" aria-labelledby="galeria-titulo">
+      <div class="gallery-heading">
+        <p class="eyebrow-text">GALERÍA DE SERVICIOS</p>
+        <h2 class="section-title section-title--light" id="galeria-titulo">Una estrategia, distintas formas de crecer</h2>
+        <p class="body-text body-text--light">Recorré la galería con los controles, indicadores o flechas del teclado.</p>
+      </div>
+
+      <div id="rapoCarousel" class="carousel slide carousel-fade rapo-carousel" data-bs-ride="carousel" data-bs-interval="5500" aria-label="Galería de servicios de RAPO Creative">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#rapoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ver Community Management"></button>
+          <button type="button" data-bs-target="#rapoCarousel" data-bs-slide-to="1" aria-label="Ver diseño web"></button>
+          <button type="button" data-bs-target="#rapoCarousel" data-bs-slide-to="2" aria-label="Ver estrategia para creadoras"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <article class="carousel-panel" tabindex="0">
+              <img src="assets/img/servicios.svg" class="d-block carousel-image" alt="Panel de herramientas para Community Management" width="800" height="450">
+              <div class="carousel-copy">
+                <p class="carousel-kicker">CONTENIDO Y COMUNIDAD</p>
+                <h3>Community Management</h3>
+                <p>Una comunicación ordenada, cercana y orientada a resultados.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="carousel-panel" tabindex="0">
+              <img src="assets/img/proyectos.svg" class="d-block carousel-image" alt="Diseño de una página web adaptable para una marca" width="800" height="450" loading="lazy">
+              <div class="carousel-copy">
+                <p class="carousel-kicker">DISEÑO Y DESARROLLO</p>
+                <h3>Páginas web responsivas</h3>
+                <p>Tu negocio disponible en cualquier dispositivo con una identidad coherente.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-item">
+            <article class="carousel-panel" tabindex="0">
+              <img src="assets/img/nosotros.svg" class="d-block carousel-image" alt="Equipo planificando una estrategia personalizada para una creadora digital" width="800" height="450" loading="lazy">
+              <div class="carousel-copy">
+                <p class="carousel-kicker">ACOMPAÑAMIENTO ESPECIALIZADO</p>
+                <h3>Estrategia para creadoras</h3>
+                <p>Planificación confidencial para profesionalizar contenido y monetización.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#rapoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#rapoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="copyright-text">&copy; 2026 RAPO Creative. Todos los derechos reservados.</p>
+    <nav class="social-nav" aria-label="Redes sociales">
+      <ul class="social-list">
+        <li class="social-item"><a class="social-link" href="https://www.instagram.com/rapocreative/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li class="social-item"><a class="social-link" href="https://www.instagram.com/rapocreative/reels/" target="_blank" rel="noopener noreferrer">Reels de RAPO</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
