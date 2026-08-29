@@ -1,0 +1,53 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.rapo-btn {
+  min-height: 48px;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  border-radius: v.$radius-pill;
+  font-family: v.$font-primary;
+  font-weight: 700;
+  @include m.transition(
+    background-color v.$transition-standard,
+    border-color v.$transition-standard,
+    color v.$transition-standard,
+    transform v.$transition-standard,
+    box-shadow v.$transition-standard
+  );
+
+  &--primary {
+    border-color: v.$color-gold;
+    background-color: v.$color-gold;
+    color: v.$color-background;
+  }
+
+  &--secondary {
+    border-color: v.$color-border-button;
+    background-color: transparent;
+    color: v.$color-ivory;
+  }
+
+  &:hover {
+    border-color: v.$color-gold-light;
+    background-color: v.$color-gold-light;
+    color: v.$color-background;
+    transform: translateY(-3px);
+    box-shadow: v.$shadow-button;
+  }
+
+  &:focus-visible {
+    @include m.focus-ring(v.$color-gold-light, 4px);
+    box-shadow: 0 0 0 5px v.$color-background;
+  }
+
+  &:active,
+  &.btn:active {
+    border-color: v.$color-gold-dark;
+    background-color: v.$color-gold-dark;
+    color: v.$color-background;
+    transform: translateY(0) scale(0.97);
+    box-shadow: none;
+  }
+}
+

@@ -1,0 +1,60 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.site-footer {
+  @include m.container;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 0 46px;
+  border-top: 1px solid v.$color-border;
+}
+
+.copyright-text {
+  margin: 0;
+  color: v.$color-footer-text;
+  font-size: 0.92rem;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: inline-block;
+  color: v.$color-gold;
+  font-weight: 600;
+  text-decoration: none;
+  @include m.transition(
+    color v.$transition-fast,
+    transform v.$transition-fast,
+    text-decoration-color v.$transition-fast
+  );
+
+  &:hover {
+    color: v.$color-ivory;
+    text-decoration: underline;
+    text-decoration-color: v.$color-gold;
+    text-underline-offset: 5px;
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    @include m.focus-ring(v.$color-gold-light, 4px);
+    border-radius: v.$radius-small;
+    color: v.$color-ivory;
+  }
+
+  &:active {
+    color: v.$color-gold-dark;
+    transform: translateY(0) scale(0.96);
+  }
+}
+

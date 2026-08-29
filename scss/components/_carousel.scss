@@ -1,0 +1,145 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.rapo-carousel {
+  overflow: hidden;
+  border: 1px solid v.$color-border-gold;
+  border-radius: v.$radius-carousel;
+  background-color: v.$color-surface-carousel;
+  box-shadow: v.$shadow-carousel;
+
+  .carousel-inner {
+    border-radius: 23px;
+  }
+
+  .carousel-indicators {
+    gap: 8px;
+    margin-bottom: 20px;
+
+    [data-bs-target] {
+      width: 32px;
+      height: 5px;
+      margin: 0;
+      border: 0;
+      border-radius: v.$radius-pill;
+      background-color: v.$color-ivory;
+      @include m.transition(
+        width v.$transition-standard,
+        background-color v.$transition-standard,
+        transform v.$transition-standard
+      );
+
+      &:hover,
+      &:focus-visible {
+        width: 44px;
+        background-color: v.$color-gold-light;
+        outline: none;
+      }
+
+      &:active {
+        transform: scaleX(0.86);
+      }
+    }
+
+    .active {
+      width: 48px;
+      background-color: v.$color-gold;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    margin: 0 12px;
+    border: 1px solid rgba(v.$color-gold, 0.5);
+    border-radius: v.$radius-circle;
+    background-color: rgba(v.$color-background, 0.85);
+    opacity: 1;
+    transform: translateY(-50%);
+    @include m.transition(
+      background-color v.$transition-fast,
+      transform v.$transition-fast,
+      box-shadow v.$transition-fast
+    );
+
+    &:hover {
+      background-color: v.$color-gold;
+      transform: translateY(-50%) scale(1.08);
+    }
+
+    &:focus-visible {
+      @include m.focus-ring(v.$color-gold-light, 3px);
+      box-shadow: 0 0 0 4px v.$color-background;
+    }
+
+    &:active {
+      background-color: v.$color-gold-dark;
+      transform: translateY(-50%) scale(0.93);
+    }
+  }
+}
+
+.carousel-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 470px;
+  background-color: v.$color-surface-deep;
+  @include m.transition(
+    background-color v.$transition-panel,
+    filter v.$transition-panel,
+    transform v.$transition-panel
+  );
+
+  &:hover {
+    background-color: v.$color-surface-hover;
+  }
+
+  &:focus {
+    outline: 3px solid v.$color-gold-light;
+    outline-offset: -7px;
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    filter: brightness(0.93);
+    transform: scale(0.995);
+  }
+}
+
+.carousel-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px 52px 72px;
+
+  h3 {
+    margin: 0 0 12px;
+    color: v.$color-ivory;
+    font-family: v.$font-heading;
+    font-size: clamp(1.65rem, 4vw, 2.55rem);
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+    color: v.$color-text-muted;
+  }
+
+  .carousel-kicker {
+    margin-bottom: 12px;
+    color: v.$color-gold;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+  }
+}
+

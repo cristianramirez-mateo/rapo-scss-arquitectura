@@ -1,0 +1,44 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: v.$color-background;
+  background-image:
+    radial-gradient(circle at 15% 5%, v.$color-glow-primary 0, transparent 30%),
+    radial-gradient(circle at 85% 35%, v.$color-glow-secondary 0, transparent 28%);
+}
+
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1100;
+  padding: 10px 16px;
+  border-radius: v.$radius-pill;
+  background-color: v.$color-gold-light;
+  color: v.$color-background;
+  font-weight: 800;
+  text-decoration: none;
+  transform: translateY(-160%);
+  @include m.transition(transform v.$transition-fast);
+
+  &:focus {
+    @include m.focus-ring(v.$color-ivory, 3px);
+    transform: translateY(0);
+  }
+}
+
+#contenido-principal {
+  scroll-margin-top: 24px;
+}

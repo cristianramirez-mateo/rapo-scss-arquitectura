@@ -1,0 +1,116 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.rapo-navbar {
+  width: 100%;
+  padding: 0;
+
+  .navbar-nav {
+    .nav-link {
+      display: block;
+      margin: 3px 0;
+      padding: 10px 14px;
+      border-radius: v.$radius-pill;
+      color: v.$color-ivory;
+      font-size: 0.94rem;
+      font-weight: 600;
+      text-decoration: none;
+      @include m.transition(
+        background-color v.$transition-standard,
+        color v.$transition-standard,
+        transform v.$transition-standard,
+        box-shadow v.$transition-standard
+      );
+
+      &:hover {
+        background-color: rgba(v.$color-gold, 0.15);
+        color: v.$color-gold-light;
+        transform: translateX(4px);
+      }
+
+      &:focus-visible {
+        @include m.focus-ring(v.$color-gold-light, 2px);
+        background-color: rgba(v.$color-gold, 0.12);
+        color: v.$color-ivory;
+      }
+
+      &:active {
+        background-color: v.$color-gold-light;
+        color: v.$color-background;
+        transform: scale(0.96);
+      }
+
+      &.active,
+      &.active:hover {
+        background-color: v.$color-gold;
+        color: v.$color-background;
+      }
+    }
+  }
+}
+
+.logo-link {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border-radius: v.$radius-logo;
+  @include m.transition(
+    transform v.$transition-logo,
+    filter v.$transition-logo,
+    box-shadow v.$transition-logo
+  );
+
+  &:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    @include m.focus-ring(v.$color-gold-light, 5px);
+    box-shadow: 0 0 0 5px v.$color-background;
+  }
+
+  &:active {
+    filter: brightness(0.94);
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+.logo-image {
+  display: block;
+  width: 164px;
+  height: auto;
+  border-radius: v.$radius-logo;
+}
+
+.navbar-toggler {
+  padding: 9px 11px;
+  border: 1px solid v.$color-gold;
+  border-radius: v.$radius-control;
+  box-shadow: none;
+  @include m.transition(
+    background-color v.$transition-fast,
+    transform v.$transition-fast,
+    box-shadow v.$transition-fast
+  );
+
+  &:hover {
+    background-color: rgba(v.$color-gold, 0.15);
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    border-color: v.$color-gold-light;
+    box-shadow: 0 0 0 4px rgba(v.$color-gold, 0.25);
+  }
+
+  &:active {
+    background-color: v.$color-gold;
+    transform: scale(0.96);
+  }
+}
+
+.navbar-collapse {
+  padding: 16px 0 2px;
+}
+

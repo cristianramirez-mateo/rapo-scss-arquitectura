@@ -1,0 +1,14 @@
+{
+  "name": "rapo-scss-arquitectura",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Refactorización completa de los estilos de RAPO Creative con arquitectura SCSS.",
+  "scripts": {
+    "build:css": "sass scss/main.scss css/style.css --style=expanded --no-source-map",
+    "watch:css": "sass --watch scss/main.scss css/style.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.103.1"
+  }
+}
+

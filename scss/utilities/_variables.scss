@@ -1,0 +1,74 @@
+// Paleta de colores RAPO
+$color-background: #12100e;
+$color-surface: #1b1814;
+$color-surface-strong: #211d18;
+$color-surface-deep: #17130f;
+$color-surface-carousel: #15120f;
+$color-surface-hover: #1e1913;
+$color-surface-nav-hover: #2a231a;
+$color-glow-primary: #2b241b;
+$color-glow-secondary: #241e17;
+$color-ivory: #f7f0e3;
+$color-ivory-soft: #fffaf1;
+$color-white-soft: #fffdf8;
+$color-gold: #d6b36a;
+$color-gold-light: #f0d494;
+$color-gold-dark: #b48f44;
+$color-gold-text: #8a692c;
+$color-border: #4b3e2c;
+$color-border-light: #ded1bb;
+$color-border-gold: #6f5b3b;
+$color-border-card: #c5a35d;
+$color-border-feature: #5a4932;
+$color-border-button: #75613f;
+$color-focus-card: #a47e35;
+$color-card-active: #f4e7d1;
+$color-text-muted: #d8cfbf;
+$color-text-dark: #24201b;
+$color-heading-dark: #17130f;
+$color-body-dark: #554d43;
+$color-caption: #cbbd9f;
+$color-footer-text: #bdb2a1;
+$color-shadow: #080706;
+$color-shadow-alt: #090806;
+$color-shadow-warm: #3a2d17;
+
+// Tipografías
+$font-primary: "Inter", sans-serif;
+$font-heading: "Montserrat", sans-serif;
+
+// Contenedores y puntos de quiebre
+$container-max-width: 1180px;
+$breakpoint-small: 576px;
+$breakpoint-mobile-max: 575.98px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-max: 991.98px;
+$breakpoint-desktop: 992px;
+
+// Radios
+$radius-small: 4px;
+$radius-control: 12px;
+$radius-logo: 14px;
+$radius-card: 16px;
+$radius-hero-mobile: 22px;
+$radius-carousel: 24px;
+$radius-section: 26px;
+$radius-hero: 30px;
+$radius-pill: 999px;
+$radius-circle: 50%;
+
+// Sombras
+$shadow-hero: 0 24px 70px $color-shadow;
+$shadow-content: 0 18px 55px $color-shadow-alt;
+$shadow-image: 0 18px 45px $color-shadow;
+$shadow-carousel: 0 20px 46px rgba($color-shadow, 0.5);
+$shadow-button: 0 10px 24px rgba($color-shadow, 0.5);
+$shadow-card-hover: 0 16px 30px rgba($color-shadow-warm, 0.12);
+$shadow-card-active: 0 6px 16px rgba($color-shadow-warm, 0.1);
+
+// Animaciones
+$transition-fast: 0.2s ease;
+$transition-standard: 0.22s ease;
+$transition-card: 0.24s ease;
+$transition-logo: 0.25s ease;
+$transition-panel: 0.3s ease;

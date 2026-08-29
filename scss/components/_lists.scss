@@ -1,0 +1,49 @@
+@use "../utilities/variables" as v;
+
+.feature-list,
+.process-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-item,
+.process-item {
+  position: relative;
+  padding: 18px 18px 18px 48px;
+  border: 1px solid v.$color-border-feature;
+  border-radius: v.$radius-logo;
+  background-color: v.$color-surface-deep;
+  color: v.$color-ivory;
+  font-weight: 500;
+
+  &::before {
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    color: v.$color-gold;
+    font-family: v.$font-heading;
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+}
+
+.feature-item::before {
+  content: "•";
+}
+
+.process-list {
+  counter-reset: process-step;
+}
+
+.process-item {
+  counter-increment: process-step;
+
+  &::before {
+    content: counter(process-step) ".";
+  }
+}
+

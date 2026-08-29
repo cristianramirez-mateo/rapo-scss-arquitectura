@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+@mixin container($gutter: 24px) {
+  width: min(v.$container-max-width, calc(100% - #{$gutter}));
+  margin-inline: auto;
+}
+
+@mixin focus-ring($color: v.$color-gold-light, $offset: 4px) {
+  outline: 3px solid $color;
+  outline-offset: $offset;
+}
+
+@mixin transition($properties...) {
+  transition: $properties;
+}
+
+@mixin mobile {
+  @media (max-width: v.$breakpoint-mobile-max) {
+    @content;
+  }
+}
+
+@mixin from-small {
+  @media (min-width: v.$breakpoint-small) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$breakpoint-tablet) and (max-width: v.$breakpoint-tablet-max) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$breakpoint-desktop) {
+    @content;
+  }
+}
+

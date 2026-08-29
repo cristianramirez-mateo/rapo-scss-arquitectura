@@ -1,0 +1,68 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.rapo-accordion {
+  margin-top: 28px;
+  --bs-accordion-border-color: #{v.$color-border-feature};
+  --bs-accordion-border-radius: #{v.$radius-logo};
+  --bs-accordion-inner-border-radius: 13px;
+
+  .accordion-item {
+    overflow: hidden;
+    border-color: v.$color-border-feature;
+    background-color: v.$color-surface-deep;
+    color: v.$color-ivory;
+  }
+
+  .accordion-button {
+    background-color: v.$color-surface-deep;
+    color: v.$color-ivory;
+    font-family: v.$font-heading;
+    font-weight: 700;
+    box-shadow: none;
+    @include m.transition(
+      background-color v.$transition-standard,
+      color v.$transition-standard,
+      padding-left v.$transition-standard
+    );
+
+    &:not(.collapsed) {
+      background-color: v.$color-gold;
+      color: v.$color-background;
+    }
+
+    &:hover {
+      padding-left: 24px;
+      background-color: v.$color-surface-nav-hover;
+      color: v.$color-gold-light;
+    }
+
+    &:not(.collapsed):hover {
+      background-color: v.$color-gold-light;
+      color: v.$color-background;
+    }
+
+    &:focus-visible {
+      @include m.focus-ring(v.$color-gold-light, -4px);
+      box-shadow: none;
+    }
+
+    &:active {
+      background-color: v.$color-gold-dark;
+      color: v.$color-background;
+    }
+
+    &::after {
+      filter: invert(88%) sepia(33%) saturate(650%) hue-rotate(352deg) brightness(95%);
+    }
+
+    &:not(.collapsed)::after {
+      filter: brightness(0.2);
+    }
+  }
+
+  .accordion-body {
+    color: v.$color-text-muted;
+  }
+}
+
